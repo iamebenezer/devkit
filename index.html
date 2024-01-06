@@ -63,13 +63,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 .hero-section{
     background-image: url(/bg-1.jpg);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: fit-content;
     background-size: cover;
 }
 .video-section{
     background-image: url(/bg-2.jpg);
     background-repeat: no-repeat;
-    height: 50vh;  
+    height: fit-content; 
     background-size: cover;
 }
 .how-to-use{
@@ -118,9 +118,10 @@ init
             data-aos-duration="1000">
               <ul class="text-white flex space-x-5">
                 <li><a href="">HOME</a></li>
-                <li><a href="">DEVKIT BOT</a></li>
-                <li><a href="">TOKENOMICS</a></li>
-                <li><a href="">ROADMAP</a></li>
+                <li><a href="#abt">About</a></li>
+                <li><a href="#bot">DEVKIT BOT</a></li>
+                <li><a href="#token">TOKENOMICS</a></li>
+                <li><a href="#road">ROADMAP</a></li>
               </ul>
             </div>
             <div  data-aos="fade-left"
@@ -133,12 +134,12 @@ init
               </div>
         </nav>
 
-            <div class="grid grid-cols-1 place-items-center" 
+            <div class="grid grid-cols-1 place-items-center p-2" 
             data-aos="fade-up"
             data-aos-duration="3000">
                 <img src="/3d.png" class="object-contain w-96 animate__animated animate__slow	1s animate__pulse animate__infinite	infinite" alt="">
-                <p class="text-white font-bold text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique magnam ab dolore?
+                <p class="text-white text-sm font-bold text-center">
+                    Commencing with our Token Creation bot, DevKit provides developers with all the utilities required to successfully launch their tokens on any EVM chain.
                 </p>
                 <div class="flex flex-row space-x-7 my-5">
                     <a href="" class="bg-[#fba80d] text-black px-4 py-4 rounded-xl animate__animated animate__slower	3s animate__pulse animate__infinite	infinite">Buy Devkit</a>
@@ -152,29 +153,39 @@ init
     </section>
     <!-- Video -->
     <section class="video-section flex justify-center items-center" 
-  >
+  id="bot">
   
         <video   data-aos="fade-up"
         data-aos-duration="500" src="/devkit how to use.mp4" class="h-96 w-80 md:h-3/5 md:w-3/5 rounded-xl animate__animated animate__slower	3s animate__heartBeat " controls autoplay></video>
     </section>
     <!-- About -->
-    <section class="hero-section flex flex-col justify-center items-center  py-6">
+    <section class="hero-section flex flex-col justify-center items-center  py-6" id="abt">
         
         <h1 class="text-center text-white text-[50px] animate__animated animate__slow	1s animate__pulse animate__infinite	infinite" data-aos="fade-up"
         data-aos-duration="1000">ABOUT</h1>
-            <div class="grid md:grid-cols-2 grid-cols-1  place-items-center gap-0 mx-8">
+            <div class="grid md:grid-cols-2 grid-cols-1  place-items-center gap-0 md:mx-60">
             <div 
             data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
-                <img src="/N-1.png" class="object-fit w-96 md:relative md:left-32" alt="">
+                <img src="/N-1.png" class="object-fit w-96 " alt="">
             </div>
             <div 
             data-aos="fade-left"
      data-aos-offset="300"
-     data-aos-easing="ease-in-sine" class="bg-[#fba80d] h-80  rounded-2xl">
-                <p class="p-12 text-center md:text-left">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis delectus odit eligendi?
+     data-aos-easing="ease-in-sine" class="bg-[#fba80d] h-fit  rounded-lg">
+                <p class="p-6 text-center md:text-left">
+                    Commencing with our Token Creation bot, DevKit provides developers with all the utilities required to successfully launch their tokens on any EVM chain.
+
+
+                    As we continue to roll out, we will continue to introduce more utilities and branch across to more EVM compatible chains in order to provide developers with every opportunity in order to make their project a success.
+                    <br>
+                    In the pipeline we already have commenced development on AI logo generator, website templates with 
+automatic population of key token metrics and ability to customize a roadmap.
+
+We will also be offering a buy bot, abilities for developers to trend their token based upon the token performance, not based upon payment!
+
+Advanced charting tools are under development.
                 </p>
                 <!-- <img src="/bg-4.jpg" class="object-fit relative right-20" alt=""> -->
             </div>
@@ -190,54 +201,81 @@ init
         data-aos-duration="500" >HOW TO USE</h1>
        
         <div data-aos="fade-up"
-        data-aos-duration="1000" class="grid md:grid-cols-3 grid-cols-1 place-items-center gap-5">
+        data-aos-duration="1000" class="grid md:grid-cols-5 grid-cols-1 place-items-center px-4 gap-5">
             <!-- step 1 -->
-        <div class="flex flex-col items-center bg-black h-64 w-80  rounded-2xl floating">
+        <div class="flex flex-col items-center bg-black h-64 w-fit  rounded-2xl floating p-4">
             <img src="/3d.png" class="w-12 py-2" alt="">
-            <h3 class="text-white">Step <span>1</span></h3>
+            <h3 class="text-white text-2xl l" style="letter-spacing: 3px;">Step <span>1</span></h3>
+            <p class="text-white text-center" style="letter-spacing: 2px;">Press start and then select the create contract option from the menu that pops up</p>
         </div>
         <!-- step 2 -->
-        <div class="flex flex-col items-center bg-black h-64 w-80  rounded-2xl floating">
+        <div class="flex flex-col items-center bg-black h-64 w-fit  rounded-2xl floating p-4">
             <img src="/3d.png" class="w-12 py-2" alt="">
-            <h3 class="text-white">Step <span>1</span></h3>
+            <h3 class="text-white text-2xl l" style="letter-spacing: 3px;">Step <span>2</span></h3>
+            <p class="text-white text-center" style="letter-spacing: 2px;">
+                Select the blockchain the contract is to be made for and the programming language to be used to write the smart contract
+            </p>
         </div>
     <!-- step 3 -->
-        <div class="floating flex flex-col items-center bg-black h-64 w-80  rounded-2xl">
+        <div class="floating flex flex-col items-center bg-black h-64 w-fit p-4 floating rounded-2xl">
             <img src="/3d.png" class="w-12 py-2" alt="">
-            <h3 class="text-white">Step <span>1</span></h3>
+            <h3 class="text-white text-2xl l" style="letter-spacing: 3px;">Step <span>3</span></h3>
+            <p  class="text-white text-center" style="letter-spacing: 2px;">
+                Specify the other details such as dev wallets, marketing wallets, airdrop wallets etc
+            </p>
+        </div>
+<!-- Step 4 -->
+        <div class="floating flex flex-col items-center bg-black h-64 w-fit p-4 floating rounded-2xl">
+            <img src="/3d.png" class="w-12 py-2" alt="">
+            <h3 class="text-white text-2xl l" style="letter-spacing: 3px;">Step <span>4</span></h3>
+            <p  class="text-white text-center" style="letter-spacing: 2px;">
+                Go through your selections and submit when you're okay with it
+            </p>
+        </div>
+        <!-- Step 5 -->
+        <div class="floating flex flex-col items-center bg-black h-64 w-fit p-4 floating rounded-2xl">
+            <img src="/3d.png" class="w-12 py-2" alt="">
+            <h3 class="text-white text-2xl l" style="letter-spacing: 3px;">Step <span>5</span></h3>
+            <p  class="text-white text-center" style="letter-spacing: 2px;">
+                 Open the generated text file for the smart contract code
+            </p>
         </div>
 
        </div>
 
 </section>
     <!-- Tokenomics -->
-<section class="hero-section flex flex-col justify-center items-center py-6" >
+<section class="hero-section flex flex-col justify-center items-center py-6" id="token">
         <h1 class="text-center text-white text-[50px] animate__animated animate__slow	1s animate__pulse animate__infinite	infinite" data-aos="fade-up"
         data-aos-duration="1000">TOKENOMICS</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 place-items-center gap-8" data-aos="fade-up"
+            <div class="grid grid-cols-1 md:grid-cols-3 place-items-center gap-4" data-aos="fade-up"
             data-aos-duration="1000">
-                <div class=" flex flex-col text-3xl">
+                <div class="flex flex-col text-3xl">
                 <p class="border-b-4 border-[#fba80d] text-white">Token Name</p>
                 <p class="text-white">DEVKIT</p>
                 <br>
                     <p class="border-b-4 border-[#fba80d] text-white">Sybmol</p>
-                <p class="text-white">DEVKIT</p>
-                
-            </div>
-            <div class=" flex flex-col text-3xl">
-                <p class="border-b-4 border-[#fba80d] text-white">Supply</p>
-                <p class="text-white"><span>10,000,000</span>M</p>
+                <p class="text-white">$DEVKIT</p>
                 <br>
+                <p class="border-b-4 border-[#fba80d] text-white">Tax On Transcation</p>
+            <p class="text-white"><span>5%</span></p>
+            <br>
+            <p class="border-b-4 border-[#fba80d] text-white">Max Transcation</p>
+        <p class="text-white"><span>2%</span></p>
+        
+            </div>
+            <div class="flex flex-col text-3xl text-center">
+                <!-- <p class="border-b-4 border-[#fba80d] text-white">Supply</p>
+                <p class="text-white"><span>10,000,000</span>M</p>
+                <br> -->
                 <p class="border-b-4 border-[#fba80d] text-white">Initial LP</p>
                 <p class="text-white"><span>1</span>ETH</p>
-            </div>
-            <div class="text-[50px] text-center">
-                <h2 class="text-white"><span>5/5</span></h2>
-                <h1 class="text-white">TAX</h1>
+           
+           
+           
             </div>
             <h1  class="text-center text-white text-2xl">CA: TBA</h1>
-            </div>
-       
+
 </section>
 
 
@@ -254,7 +292,7 @@ data-aos-duration="1000"
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
-	margin-left: 30px;
+	
 	margin-top: 5px;
 }
 
@@ -269,17 +307,17 @@ data-aos-duration="1000"
         data-aos="fade-up"
 data-aos-duration="1000">
             <!-- step 1 -->
-        <div class="flex flex-col items-center bg-black h-64  w-80  rounded-2xl floating">
+        <div class="floating flex flex-col items-center bg-black h-64 w-80 p-4 floating rounded-2xl">
             <img src="/3d.png" class="w-12 py-2" alt="">
             <h3 class="text-white">PHASE <span>1</span></h3>
         </div>
         <!-- step 2 -->
-        <div class="flex flex-col items-center bg-black h-64  w-80  rounded-2xl floating">
+        <div class="floating flex flex-col items-center bg-black h-64 w-80 p-4 floating rounded-2xl">
             <img src="/3d.png" class="w-12 py-2" alt="">
             <h3 class="text-white">PHASE <span>2</span></h3>
         </div>
     <!-- step 3 -->
-        <div class="flex flex-col items-center bg-black h-64  w-80  rounded-2xl floating">
+        <div class="floating flex flex-col items-center bg-black h-64 w-80 p-4 floating rounded-2xl">
             <img src="/3d.png" class="w-12 py-2" alt="">
             <h3 class="text-white">PHASE <span>3</span></h3>
         </div>
