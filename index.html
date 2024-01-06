@@ -73,8 +73,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     background-size: cover;
 }
 .how-to-use{
-    background-image: linear-gradient(to left bottom, #ffa600, #b87d0d, #785512, #402f10, #0d0903);
-    
+    /* background-image: linear-gradient(to left bottom, #ffa600, #b87d0d, #785512, #402f10, #0d0903);
+     */
+     background-image: url(/bg-4.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    height: fit-content;
 }
 .footer-section{
     background-image: url(/bg-2.jpg);
@@ -173,7 +177,10 @@ init
             <div 
             data-aos="fade-left"
      data-aos-offset="300"
-     data-aos-easing="ease-in-sine" class="bg-[#fba80d] h-fit w-[420px]  rounded-lg">
+     data-aos-easing="ease-in-sine" class="bg-[#fba80d] h-fit w-[420px]  rounded-lg" style=" background-image: url(/bg-4.jpg);
+     background-repeat: no-repeat;  
+     background-size: cover;
+     height: fit-content;">
                 <p class="p-6 text-center md:text-left">
                     Commencing with our Token Creation bot, DevKit provides developers with all the utilities required to successfully launch their tokens on any EVM chain.
 
